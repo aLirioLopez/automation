@@ -43,8 +43,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
             public void summary_cart_empty(WebDriver driver){
                 try{
-                    WebDriverWait wait = new WebDriverWait(driver, 15);
-                    wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(Selectors.ORDERPAGEEMTPY)));
+                    //WebDriverWait wait = new WebDriverWait(driver, 15);
+                    //wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(Selectors.ORDERPAGEEMTPY)));
                     driver.findElement(By.cssSelector(Selectors.ORDERPAGEEMTPY)).isDisplayed();
                 }catch(NoSuchElementException e){
                     System.out.println("The summary cart page have products.");

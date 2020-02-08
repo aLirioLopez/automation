@@ -26,8 +26,8 @@ public class ProductPage {
     }
 
     public void click_on_proceed_to_cart(WebDriver driver){
-        WebDriverWait wait = new WebDriverWait(driver, 15);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(Selectors.MODALPROCEEDBUTTON)));
+        //WebDriverWait wait = new WebDriverWait(driver, 15);
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(Selectors.MODALPROCEEDBUTTON)));
         driver.findElement(By.cssSelector(Selectors.MODALPROCEEDBUTTON)).click();
     }
 
@@ -37,13 +37,13 @@ public class ProductPage {
     }
 
     public void invalid_quantity(WebDriver driver){
-        WebDriverWait wait = new WebDriverWait(driver, 15);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(Selectors.NULLQUANTITYMODAL)));
+        //WebDriverWait wait = new WebDriverWait(driver, 15);
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(Selectors.NULLQUANTITYMODAL)));
     }
 
     public void product_added(WebDriver driver){
-        WebDriverWait wait = new WebDriverWait(driver, 15);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(Selectors.ADDEDMODAL)));
+        //WebDriverWait wait = new WebDriverWait(driver, 15);
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(Selectors.ADDEDMODAL)));
     }
 
     public void select_different_size(WebDriver driver, String size){

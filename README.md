@@ -10,5 +10,6 @@ Para ver los resultados de las pruebas de una manera más clara, es recomendable
 carpeta target una vez finalizada la prueba.
 
 -- Lanzar en modo headless --
+
 Para lanzar la prueba en modo headless se puede descomentar la "linea 39" del archivo CartSteps.java y añadir la variable 
 options a la inicialización del ChromeDriver()

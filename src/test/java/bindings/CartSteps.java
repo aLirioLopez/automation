@@ -21,7 +21,6 @@ import java.util.concurrent.TimeUnit;
 public class CartSteps {
 
     WebDriver driver = null;
-    //ChromeOptions options = new ChromeOptions().addArguments("--headless");
     HomePage homepage = new HomePage();
     ProductPage productpage = new ProductPage();
     OrderPage orderpage = new OrderPage();
@@ -36,10 +35,8 @@ public class CartSteps {
         System.out.println("Starting - " + scenario.getName());
         System.out.println("__________________________________");
 
+        //Uncomment following code line and add options variable to ChromeDriver() to run tests in headless mode
         //options.addArguments("--headless");
-        // Descomentar para lanzar la prueba en modo headless.
-        // driver = new ChromeDriver(options);
-
         driver = new ChromeDriver();
     }
 
